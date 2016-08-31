@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignRight="@+id/address"
+        android:layout_alignEnd="@+id/address"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/widget_edittext_dark" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="New Texti"
+        android:id="@+id/address"
+        android:maxLines="5"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="@android:color/widget_edittext_dark" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="New Text"
+        android:id="@+id/pay"
+        android:layout_above="@+id/address"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignRight="@+id/address"
+        android:layout_alignEnd="@+id/address"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="@android:color/widget_edittext_dark" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/name"
+        android:layout_above="@+id/pay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textAlignment="center"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find in map"
+        android:id="@+id/button2"
+        android:background="@android:color/holo_green_dark"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_toLeftOf="@+id/ratingBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:background="@color/abc_input_method_navigation_guard"
+        android:clickable="true" />
+
+</RelativeLayout>
